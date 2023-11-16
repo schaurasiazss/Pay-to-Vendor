@@ -1,0 +1,15 @@
+<!-- my_module/views/my_module_menus.xml -->
+
+<odoo>
+    <data>
+        <record id="action_pay_to_vendor_wizard" model="ir.actions.act_window">
+            <field name="name">pay to vendor wizard</field>
+            <field name="res_model">pay.to.vendor.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_pay_to_vendor_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem name="Pay to Vendor" id="menu_pay_to_vendor" action="action_pay_to_vendor_wizard" parent="account.menu_finance"/>
+    </data>
+</odoo>
